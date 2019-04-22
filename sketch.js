@@ -1,6 +1,6 @@
 function setup() {
   createCanvas(800, 1200);
-var var1 = "hello world";
+var v = "hello world";
   textSize(width / 3);
   textAlign(CENTER, CENTER);
 }
@@ -9,5 +9,5 @@ var var1 = "hello world";
 
 function draw() {
   background(245);
-text(var1,0,0);
+text(v,0,0);
 }
