@@ -8,5 +8,5 @@ function draw() {
 textSize(width / 5);
 textAlign(LEFT, BOTTOM);
 fill(0,255,0);
-text(v,0,0);
+text(v,60,60);
 }
