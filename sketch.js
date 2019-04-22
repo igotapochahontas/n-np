@@ -1,4 +1,4 @@
-var v = "hello world";
+var v = "C:> hello world!";
 function setup() {
   createCanvas(800, 1200);
 }
@@ -8,5 +8,5 @@ function draw() {
 textSize(width / 3);
 textAlign(CENTER, CENTER);
 fill(0,255,0);
-text(v,50,50);
+text(v,0,1000);
 }
