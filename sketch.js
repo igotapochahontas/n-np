@@ -9,5 +9,5 @@ let var1 = "hello world";
 
 function draw() {
   background(245);
-text(var1);
+text(var1,0,0);
 }
