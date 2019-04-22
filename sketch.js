@@ -1,9 +1,9 @@
- let v = "hello world";
+ 
 function setup() {
   createCanvas(800, 1200);
-
+var v = "hello world";
   textSize(30);
-  // textAlign(CENTER, CENTER);
+  
 
 
 }
