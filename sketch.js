@@ -2,8 +2,8 @@
 function setup() {
   createCanvas(800, 1200);
 
-  textSize(100);
-  textAlign(CENTER, CENTER);
+  textSize(30);
+  // textAlign(CENTER, CENTER);
 
 
 }
@@ -11,5 +11,5 @@ function setup() {
 function draw() {
   background(245);
 
- text(v,0,0);
+ text(v,0,1000);
 }
