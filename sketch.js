@@ -3,5 +3,6 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(0);200:200
 }
+// Cockbag
