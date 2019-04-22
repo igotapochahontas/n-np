@@ -1,6 +1,6 @@
 function setup() {
   createCanvas(800, 1200);
-let var1 = "hello world";
+var var1 = "hello world";
   textSize(width / 3);
   textAlign(CENTER, CENTER);
 }
