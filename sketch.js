@@ -3,7 +3,7 @@ function setup() {
 let var1 = "hello world";
 stroke(20);
 textSize(32);
-text(var1,50,50,50,50);
+text(var1,10, 10, 70, 80);
 }
 
 function draw() {
