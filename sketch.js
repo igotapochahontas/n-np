@@ -2,7 +2,7 @@ let v = "hello world";
 function setup() {
   createCanvas(800, 1200);
 
-  textSize(width / 3);
+  textSize(100);
   textAlign(CENTER, CENTER);
 }
 
