@@ -6,6 +6,6 @@ text(var1,50,50,50,50);
 }
 
 function draw() {
-  background(0);
+  background(200);
 
 }
