@@ -5,8 +5,8 @@ function setup() {
 
 function draw() {
   background(0);
-textSize(width / 3);
-textAlign(CENTER, CENTER);
+textSize(width / 5);
+textAlign(LEFT, BOTTOM);
 fill(0,255,0);
-text(v,0,1000);
+text(v,0,0);
 }
