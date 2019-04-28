@@ -1,8 +1,13 @@
-var v = "C:> hello world!";
+var input; 
+var v = "C:< hello world!";
 function setup() {
   createCanvas(800, 1200);
+input = createInput("Ram your maths in here");
+input.changed(updateText);
 }
-
+function updateText(){
+v.html(input.value());
+}
 function draw() {
   background(0);
 textSize(width / 8);
