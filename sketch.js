@@ -6,8 +6,8 @@ input = createInput("Ram your maths in here");
 input.changed(updateText);
 }
 function updateText(){
-clear();
-v.html(input.value());
+v = 0;
+v = input.value();
 }
 function draw() {
   background(0);
