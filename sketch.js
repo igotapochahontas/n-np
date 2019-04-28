@@ -6,6 +6,7 @@ input = createInput("Ram your maths in here");
 input.changed(updateText);
 }
 function updateText(){
+clear();
 v.html(input.value());
 }
 function draw() {
