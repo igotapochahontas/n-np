@@ -7,7 +7,13 @@ fartBox.changed(updateText);
 }
 function updateText(){
 v = 0;
-v = fartBox.value();
+function jizzinpants (){
+  v = fartBox.value();
+  fuck = v + 1;
+  fuck2 = v - 1;
+  v = fuck + fuck2;
+  }
+
 }
 function draw() {
   background(0);
