@@ -5,9 +5,8 @@ var fuck2;
 function setup() {
   createCanvas(800, 1200);
 fartBox = createInput("Ram your maths in here");
-fartBox.changed(updateText);
+fartBox.changed(zizzinpants);
 }
-function updateText(){
 
 function jizzinpants (){
   v = fartBox.value();
@@ -17,7 +16,7 @@ function jizzinpants (){
   v = fuck, fuck2;
   }
 
-}
+
 function draw() {
   background(0);
 textSize(width / 8);
