@@ -11,7 +11,7 @@ function updateText(){
 v = 0;
 function jizzinpants (){
   v = fartBox.value();
-  
+  hipster = parseInt(v);
   fuck = v + 1;
   fuck2 = v - 1;
   v = fuck + fuck2;
