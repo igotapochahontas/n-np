@@ -13,7 +13,7 @@ function jizzinpants (){
   hipster = parseInt(v);
   fuck = hipster + 1;
   fuck2 = hipster - 1;
-  v = fuck, fuck2;
+  v = (fuck, fuck2);
   }
 
 
