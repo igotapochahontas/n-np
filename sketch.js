@@ -1,6 +1,5 @@
 var fartBox; 
 var v;
-var v = "C:< hello world!";
 var fuck;
 var fuck2;
 function setup() {
