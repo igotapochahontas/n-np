@@ -1,5 +1,6 @@
 var fartBox; 
 var v = "C:< hello world!";
+var v = 0;
 var fuck;
 var fuck2;
 function setup() {
@@ -8,7 +9,7 @@ fartBox = createInput("Ram your maths in here");
 fartBox.changed(updateText);
 }
 function updateText(){
-v = 0;
+
 function jizzinpants (){
   v = fartBox.value();
   hipster = parseInt(v);
