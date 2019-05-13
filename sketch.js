@@ -1,5 +1,7 @@
 var fartBox; 
 var v = "C:< hello world!";
+var fuck;
+var fuck2;
 function setup() {
   createCanvas(800, 1200);
 fartBox = createInput("Ram your maths in here");
@@ -9,6 +11,7 @@ function updateText(){
 v = 0;
 function jizzinpants (){
   v = fartBox.value();
+  
   fuck = v + 1;
   fuck2 = v - 1;
   v = fuck + fuck2;
