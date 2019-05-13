@@ -5,7 +5,7 @@ var fuck2;
 function setup() {
   createCanvas(800, 1200);
 fartBox = createInput(42);
-fartBox.changed(zizzinpants);
+fartBox.changed(jizzinpants);
 }
 
 function jizzinpants (){
