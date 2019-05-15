@@ -1,7 +1,8 @@
 var fartBox; 
 var v;
-var fuck;
-var fuck2;
+var va=[];
+var one;
+var one2;
 function setup() {
   createCanvas(800, 1200);
 fartBox = createInput(42);
@@ -11,9 +12,10 @@ fartBox.changed(jizzinpants);
 function jizzinpants (){
   v = fartBox.value();
   hipster = parseInt(v);
-  fuck = hipster + 1;
-  fuck2 = hipster - 1;
-  v = (fuck, fuck2);
+  one = hipster + 1;
+  one2 = hipster - 1;
+  va.push(one);
+  va.push(one2);
   }
 
 
@@ -22,7 +24,7 @@ function draw() {
 textSize(width / 8);
 textAlign(LEFT, BOTTOM);
 fill(0,255,0);
-text(v,0,1100);
+text(va,0,1100);
 }
 //Function math xv (+)(-)1 (-)(+)2 (+)(-)3(+)(-)4 if <0 then invalid
 //Function math yv (+)(-)1 (-)(+)2 (+)(-)3(+)(-)4 if <0 then invalid
