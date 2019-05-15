@@ -1,4 +1,5 @@
 var fartBox; 
+var bsize = 4;
 var v;
 var va=[];
 var one;
@@ -12,12 +13,13 @@ fartBox.changed(jizzinpants);
 function jizzinpants (){
   v = fartBox.value();
   hipster = parseInt(v);
-  one = hipster + 1;
-  one2 = hipster - 1;
+for (i = 0; i < bsize; i++){
+  one = hipster + i;
+  one2 = hipster - i;
   va.push(one);
   va.push(one2);
   }
-
+}
 
 function draw() {
   background(0);
@@ -26,7 +28,8 @@ textAlign(LEFT, BOTTOM);
 fill(0,255,0);
 text(va,0,1100);
 }
-//Function math xv (+)(-)1 (-)(+)2 (+)(-)3(+)(-)4 if <0 then invalid
+
+//Function math jizzxinpants (+)(-)1 (-)(+)2 (+)(-)3(+)(-)4 if <0 then invalid
 //Function math yv (+)(-)1 (-)(+)2 (+)(-)3(+)(-)4 if <0 then invalid
 //Function store xv and yv
 //Function 2 math if y is>4 then (-) 4 
