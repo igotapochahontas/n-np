@@ -24,7 +24,7 @@ for (i = 0; i < bsize; i++){
 function gridparse (){
  var initv = hipster;
 if (initv > bsize){
-initv = initv - 1;
+initv = initv - 4;
   console.log(initv);
 }
 }
