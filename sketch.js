@@ -14,7 +14,7 @@ fartBox.changed(jizzinpants);
 function jizzinpants (){
   v = fartBox.value();
   hipster = parseInt(v);
-for (i = 1; i >= bsize; i++){
+for (i = 1; i <= bsize; i++){
   one = hipster + i;
   one2 = hipster - i;
   va.push(one);
