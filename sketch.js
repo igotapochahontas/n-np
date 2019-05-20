@@ -20,13 +20,20 @@ for (i = 0; i < bsize; i++){
   va.push(one2);
   }
 }
-
+function gridparse (){
+ var initv = hipster;
+if (initv > bsize){
+initv = initv - 1;
+  console.log(initv);
+}
+}
 function draw() {
   background(0);
 textSize(width / 8);
 textAlign(LEFT, BOTTOM);
 fill(0,255,0);
 text(va,0,1100);
+  gridparse();
 }
 
 //Function math jizzxinpants (+)(-)1 (-)(+)2 (+)(-)3(+)(-)4 if <0 then invalid
