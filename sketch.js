@@ -1,5 +1,6 @@
 var fartBox; 
 var bsize = 4;
+var hipster;
 var v;
 var va=[];
 var one;
