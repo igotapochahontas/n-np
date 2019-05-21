@@ -4,8 +4,9 @@ var fartbsize;
 var bsize = 4;
 var hipster;
 var v;
+var va;
 var va=[];
-var vy = [];
+var vya = [];
 var one;
 var one2;
 var hipstery;
@@ -42,8 +43,8 @@ function jiyyinpants (){
 for (i = 1; i <= bsize; i++){
   oney = hipstery + i;
   one2y = hipstery - i;
-  vy.push(oney);
-  vy.push(one2y);
+  vya.push(oney);
+  vya.push(one2y);
   }
 }
 function gridparse (){
@@ -66,8 +67,8 @@ textSize(width / va.length);
 textAlign(LEFT, BOTTOM);
 fill(0,255,0);
 text(va,0,1100);
-text(vy,0,0);
-  // gridparse();
+text(vya,0,0);
+  gridparse();
 }
 
 //Function math jizzxinpants (+)(-)1 (-)(+)2 (+)(-)3(+)(-)4 if <0 then invalid
