@@ -12,9 +12,9 @@ var hipstery;
 var oney;
 var one2y;
 function setup() {
-fartBox = createInput(x);
-fartBoy = createInput(y);
-fartBsize = createInput(size);
+fartBox = createInput("x");
+fartBoy = createInput("y");
+fartBsize = createInput("size");
   createCanvas(800, 1200);
 
 fartBox.changed(jizzinpants);
@@ -55,13 +55,14 @@ inity = inity - 4;
 
   console.log(inity);
 }
+  }
 function draw() {
   background(0);
 textSize(width / 8);
 textAlign(LEFT, BOTTOM);
 fill(0,255,0);
 text(va,0,1100);
-text(vy,0,1100);
+text(vy,0,0);
   gridparse();
 }
 
