@@ -32,6 +32,10 @@ for (i = 1; i <= bsize; i++){
   va.push(one2);
   }
 }
+function jizzinboard (){
+  var bx = 800 / bsize;
+  var by = 1200 / bsize;
+  }
 function jiyyinpants (){
   vy = fartBoy.value();
   hipstery = parseInt(vy);
@@ -58,12 +62,12 @@ inity = inity - 4;
   }
 function draw() {
   background(0);
-textSize(width / 8);
+textSize(width / va.length);
 textAlign(LEFT, BOTTOM);
 fill(0,255,0);
 text(va,0,1100);
 text(vy,0,0);
-  gridparse();
+  // gridparse();
 }
 
 //Function math jizzxinpants (+)(-)1 (-)(+)2 (+)(-)3(+)(-)4 if <0 then invalid
