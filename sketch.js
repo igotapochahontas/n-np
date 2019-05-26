@@ -18,12 +18,12 @@ fartBoy = createInput("y");
 fartBsize = createInput("size");
   createCanvas(800, 1200);
 
-fartBox.changed(jizzinpants);
+fartBox.changed(jixxinpants);
 fartBoy.changed(jiyyinpants);
-fartBsize.changed(jizzinboard);
+fartBsize.changed(jixxinboard);
 }
 
-function jizzinpants (){
+function jixxinpants (){
   v = fartBox.value();
   hipster = parseInt(v);
 for (i = 1; i <= bsize; i++){
@@ -33,7 +33,7 @@ for (i = 1; i <= bsize; i++){
   va.push(one2);
   }
 }
-function jizzinboard (){
+function jixxinboard (){
   var bx = 800 / bsize;
   var by = 1200 / bsize;
   }
@@ -52,13 +52,13 @@ function gridparse (){
  var inity = hipstery;
 if (initv > bsize){
 initv = initv - 4;
-
-  console.log(initv);
+alert(initv); 
+  //console.log(initv);
 }
 if (inity > bsize){
 inity = inity - 4;
-
-  console.log(inity);
+alert(inity); 
+ // console.log(inity);
 }
   }
 function draw() {
@@ -71,7 +71,7 @@ text(vya,0,0);
   gridparse();
 }
 
-//Function math jizzxinpants (+)(-)1 (-)(+)2 (+)(-)3(+)(-)4 if <0 then invalid
+//Function math jixxinpants (+)(-)1 (-)(+)2 (+)(-)3(+)(-)4 if <0 then invalid
 //Function math yv (+)(-)1 (-)(+)2 (+)(-)3(+)(-)4 if <0 then invalid
 //Function store xv and yv
 //Function 2 math if y is>4 then (-) 4 
