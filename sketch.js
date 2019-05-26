@@ -52,13 +52,13 @@ function gridparse (){
  var inity = hipstery;
 if (initv > bsize){
 initv = initv - 4;
-alert(initv); 
-  //console.log(initv);
+//alert(initv); 
+  console.log(initv);
 }
 if (inity > bsize){
 inity = inity - 4;
-alert(inity); 
- // console.log(inity);
+//alert(inity); 
+ console.log(inity);
 }
   }
 function draw() {
