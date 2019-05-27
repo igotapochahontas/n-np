@@ -1,7 +1,8 @@
 var fartBox; 
 var fartBoy;
 var fartbsize;
-var bsize = 4;
+var bsize = 8;
+var bfract = bsize -4; 
 var hipster;
 var v;
 var va;
@@ -26,7 +27,7 @@ fartBsize.changed(jixxinboard);
 function jixxinpants (){
   v = fartBox.value();
   hipster = parseInt(v);
-for (i = 1; i <= bsize; i++){
+for (i = 1; i <= bfract; i++){
   one = hipster + i;
   one2 = hipster - i;
   va.push(one);
@@ -40,7 +41,7 @@ function jixxinboard (){
 function jiyyinpants (){
   vy = fartBoy.value();
   hipstery = parseInt(vy);
-for (i = 1; i <= bsize; i++){
+for (i = 1; i <= bfract; i++){
   oney = hipstery + i;
   one2y = hipstery - i;
   vya.push(oney);
@@ -51,14 +52,16 @@ function gridparse (){
  var initv = hipster;
  var inity = hipstery;
 if (initv > bsize){
-initv = initv - 4;
+bfract = initv - 4;
+//initv = initv - 4;
 //alert(initv); 
-  console.log(initv);
+  //console.log(initv);
 }
 if (inity > bsize){
-inity = inity - 4;
+bfract = inity - 4;
+//inity = inity - 4;
 //alert(inity); 
- console.log(inity);
+ // console.log(inity);
 }
   }
 function draw() {
@@ -67,7 +70,7 @@ textSize(width / va.length);
 textAlign(LEFT, BOTTOM);
 fill(0,255,0);
 text(va,0,1100);
-text(vya,0,0);
+text(vya,0,100);
   gridparse();
 }
 
