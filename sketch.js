@@ -6,6 +6,7 @@ var bfract = bsize -4;
 var hipster;
 var v;
 var va;
+var realfont; 
 var xdim = [];
 var ydim = [];
 var va=[];
@@ -15,6 +16,7 @@ var one2;
 var hipstery;
 var oney;
 var one2y;
+var offs; 
 function setup() {
 fartBsize = createInput("size");
 fartBox = createInput("x");
@@ -28,15 +30,19 @@ fartBoy.changed(jiyyinpants);
 }
 function jixxinboard (){
 v = fartBsize.value();
-  hipster = parseInt(v);
-for (i = 1; i <= hipster; i++){
+  offs = parseInt(v);
+
+for (i = 1; i <= offs; i++){
   xdim.push(i);
   ydim.push(i)
 }
+
 v = 0;
-hipster = 0;
-  //var bx = 800 / bsize;
-  //var by = 1200 / bsize;
+realfont = offs * 1.5;
+bfract = offs; 
+  return realfont; 
+return bfract; 
+// createCanvas(800, 1200);
   }
 function jixxinpants (){
   v = fartBox.value();
@@ -46,11 +52,17 @@ xdim.splice(hipster-1,1,0);
 for (i = 1; i <= bfract; i++){
   one = hipster + i;
   one2 = hipster - i;
-  va.push(one);
+
 if (one2 >  0){
-  va.push(one2);
+va.push(one2);
+
+if (one < bfract) {
+  va.push(one);
+  
+}
 }
   }
+ createCanvas(800, 1200);
 }
 
 function jiyyinpants (){
@@ -60,12 +72,20 @@ ydim.splice(hipstery-1,1,0);
 for (i = 1; i <= bfract; i++){
   oney = hipstery + i;
   one2y = hipstery - i;
-  vya.push(oney);
+
 if (one2y > 0) {
-  vya.push(one2y);
+ vya.push(one2y);
+
+if (oney < bfract) {
+  vya.push(oney);
+ 
+}
 }
   }
+ createCanvas(800, 1200);
 }
+
+
 function gridparse (){
  var initv = hipster;
  var inity = hipstery;
@@ -84,7 +104,7 @@ bfract = inity - 4;
   }
 function draw() {
   background(0);
-textSize(width / xdim.length-4);
+textSize(width / realfont);
 textAlign(LEFT, BOTTOM);
 fill(0,255,0);
 text(va,0,1100);
