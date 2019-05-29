@@ -42,22 +42,28 @@ function jixxinpants (){
   v = fartBox.value();
   hipster = parseInt(v);
 
+xdim.splice(hipster-1,1,0);
 for (i = 1; i <= bfract; i++){
   one = hipster + i;
   one2 = hipster - i;
   va.push(one);
+if (one2 >  0){
   va.push(one2);
+}
   }
 }
 
 function jiyyinpants (){
   vy = fartBoy.value();
   hipstery = parseInt(vy);
+ydim.splice(hipstery-1,1,0);
 for (i = 1; i <= bfract; i++){
   oney = hipstery + i;
   one2y = hipstery - i;
   vya.push(oney);
+if (one2y > 0) {
   vya.push(one2y);
+}
   }
 }
 function gridparse (){
@@ -78,7 +84,7 @@ bfract = inity - 4;
   }
 function draw() {
   background(0);
-textSize(width / va.length);
+textSize(width / xdim.length-4);
 textAlign(LEFT, BOTTOM);
 fill(0,255,0);
 text(va,0,1100);
