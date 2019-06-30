@@ -92,13 +92,13 @@ function gridparse (){
 if (initv > bsize){
 bfract = initv - 4;
 //initv = initv - 4;
-//alert(initv); 
+alert(initv); 
   //console.log(initv);
 }
 if (inity > bsize){
 bfract = inity - 4;
 //inity = inity - 4;
-//alert(inity); 
+alert(inity); 
  // console.log(inity);
 }
   }
