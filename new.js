@@ -1,3 +1,5 @@
+var map2=[];
+var map1 = [];
 var output = [];
 var hipstu; 
 var initv; 
@@ -54,7 +56,8 @@ function jiyyinpants (){
 ydim.indexOf(hipstery) === -1 ? ydim.push(hipstery) : alert("Y already exists");
 combhip = "" + hipster + hipstery; 
 // ^ forces integer to string for concat
- xycombo.push(combhip);
+initv = parseInt(combhip); 
+ xycombo.push(initv);
 createCanvas(800, 1200);
 gridparse();
 }
@@ -63,13 +66,22 @@ gridparse();
 function gridparse (){
 
 if (xycombo.length>2){
-initv = xycombo[1];
-inity = xycombo[0];
-initv1 = parseInt(initv); 
-inity1 = parseInt(inity); 
-vtemx = initv1-inity1; 
-abo = Math.abs(vtemx);
-alert(abo); 
+// for length parse
+// for length subtract
+//initv = xycombo[1];
+//inity = xycombo[0];
+//initv1 = parseInt(initv); 
+//inity1 = parseInt(inity); 
+//inty = (xycombo.length - 1); 
+initv1 = xycombo[xycombo.length -1];
+//vtemx = initv1-inity1; 
+map1 = xycombo.map(t => t - initv1)
+map2 = map1.map(Math.abs);
+abo = map2.pop();
+// ^ get rid of last element (it's null) 
+//abo = Math.abs(vtemx);
+//alert(abo); 
+alert(map2);
 lastest();
 }
 }
@@ -87,7 +99,8 @@ gridparse();
 
   }
   function lastest(){
-var number = abo,
+//var number = abo,
+var number = map2,
     output = [],
     sNumber = number.toString();
 
@@ -98,9 +111,9 @@ output.indexOf(hipstu) === -1 ? output.push(hipstu) : alert("Diagonal Conflict")
  
 }
 
-alert(output);
-vya = output.toString();
 
+vya = output.toString();
+alert(vya);
 }
 function draw() {
   background(0);
