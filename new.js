@@ -1,8 +1,10 @@
+var j= 1;
 var number
 var sNumber = [];
 var map2=[];
 var map1 = [];
 var output = [];
+var hipstj; 
 var hipstu; 
 var initv; 
 var inity;
@@ -50,7 +52,7 @@ function jixxinpants (){
 if (xdim.indexOf(hipster) == -1) {
     xdim.push(hipster);
 }
-else {alert("X already exists");
+else {alert("X conflict");
 hipster = 0; 
 }
 createCanvas(800, 1200);
@@ -65,10 +67,14 @@ function jiyyinpants (){
 if (ydim.indexOf(hipstery) == -1) {
     ydim.push(hipstery);
 }
-else {alert("Y already exists");
+else {
 hipstery = 0; 
+hipster = 0;
+xdim.pop();
+//xycombo.pop();
+alert("Y conflict");
 }
-if (hipster != 0 || hipstery != 0){
+if ( hipster != 0){
 combhip = "" + hipster + hipstery; 
 // ^ forces integer to string for concat
 initv = parseInt(combhip); 
@@ -122,13 +128,19 @@ number;
 sNumber; 
 //var number = abo,
 number = map2,
-//    output = [],
+
     sNumber = number.toString();
 
-for (var i = 0, len = sNumber.length ; i < len; i += 1) {
+for (var i = 0, len = sNumber.length ; i < len; i += 2) {
+
 hipstu = parseInt(+sNumber.charAt(i));
-if (output.indexOf(hipstu) === -1){
-output.push(hipstu) ;}
+hipstj = parseInt(+sNumber.charAt(j));
+
+j+=2;
+if (hipstu != hipstj){
+//output.push(initv1) ;
+//alert(hipstu+","+hipstj); 
+}
 else {
 alert("Diagonal Conflict");
 xdim.pop();
@@ -143,7 +155,7 @@ xycombo.pop();
 }
 
 
-output.filter(function(e){return !!e});
+//output.filter(function(e){return !!e});
 //vya = output.toString();
 //alert(vya);
 }
@@ -154,8 +166,8 @@ textAlign(LEFT, BOTTOM);
 fill(0,255,0);
 text("Board size: "+offs,0,100);
 text("Values Passed: ",0,300);
-text("X,Y: "+map2,0,600);
-text("Diagonal: "+output,0,900);
+text("X,Y: "+xycombo,0,600);
+text("Diagonal: "+map2,0,900);
  
 }
 
